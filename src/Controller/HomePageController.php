@@ -55,6 +55,7 @@ class HomePageController extends AbstractController
             "nombre_b" => $nombre_b,
             "signe" => $signe,
         );
+        
         return $this->render('home_page/index.html.twig', $data);
     }
      
