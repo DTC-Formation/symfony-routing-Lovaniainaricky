@@ -35,7 +35,7 @@ class ResultatController extends AbstractController
                     break;
                 case '*':
                     $retour = $nombre_a * $nombre_b;
-                    break;
+                    break; 
                 case '/':
                     if ($nombre_b == 0 ) {
                         $retour = "impossible";
