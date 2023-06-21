@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% set age = 50 %}
+
+{% block body %}
+    <h2>Page de contact</h2>
+    <form action="{{ url("app_resultat") }}"> 
+        <input type="text" name="nombre_a" value="{{ nombre_a }}">
+        <input type="text" name="signe" value="{{ signe }}">
+        <input type="text" name="nombre_b" value="{{ nombre_b }}">
+        <input type="submit">
+    </form>
+
+    {{ retour }}
+    <br>
+    <a href="{{ url("contact_home") }}">
+        <button> contact us </button>
+    </a>
+    
+
+{% endblock %}
+
+
+{# devois twig href => Path #}
+{# Controller redire to route #}
+{# alefao mail ilay sary-nao #}
+{# message makani am julien DTC Symfony #}
+

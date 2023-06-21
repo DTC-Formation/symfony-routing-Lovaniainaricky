@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Page de Resultat</h2>
+    
+
+    <input type="text" name="nombre_a" value="{{ nombre_a }}">
+    <input type="text" name="signe" value="{{ signe }}">
+    <input type="text" name="nombre_b" value="{{ nombre_b }}"> = {{ retour }}
+    
+    <br>
+    <a href="{{ url("home_page") }}">
+        <button> Refaire autre caclul </button>
+    </a>
+    <br>
+    <a href="{{ url("contact_home") }}">
+        <button> contact us </button>
+    </a>
+    
+
+{% endblock %}
